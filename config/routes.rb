@@ -51,5 +51,5 @@ Rails.application.routes.draw do
   get("/roll/2/20", { :controller => "dice", :action => "two_twenty" })
   get("/roll/3/20", { :controller => "dice", :action => "three_twenty" })
 
-  get("/roll/:zebra/:giraffe", { :controller => "dice", :action => "two_six" })
+  get("/roll/:number_of_dice/:sides", { :controller => "dice", :action => "infinity" })
 end
